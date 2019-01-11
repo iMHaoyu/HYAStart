@@ -13,6 +13,9 @@
 		D23CE54321E83CC4005F4AB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D23CE54221E83CC4005F4AB5 /* Assets.xcassets */; };
 		D23CE54621E83CC4005F4AB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D23CE54421E83CC4005F4AB5 /* LaunchScreen.storyboard */; };
 		D23CE54921E83CC4005F4AB5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D23CE54821E83CC4005F4AB5 /* main.m */; };
+		D23CE55121E83CDB005F4AB5 /* map_new2.json in Resources */ = {isa = PBXBuildFile; fileRef = D23CE54F21E83CDA005F4AB5 /* map_new2.json */; };
+		D23CE55221E83CDB005F4AB5 /* map_new1.json in Resources */ = {isa = PBXBuildFile; fileRef = D23CE55021E83CDA005F4AB5 /* map_new1.json */; };
+		D23CE55621E83D16005F4AB5 /* HYAStartCalculate.m in Sources */ = {isa = PBXBuildFile; fileRef = D23CE55421E83D16005F4AB5 /* HYAStartCalculate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		D23CE54521E83CC4005F4AB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D23CE54721E83CC4005F4AB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D23CE54821E83CC4005F4AB5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D23CE54F21E83CDA005F4AB5 /* map_new2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = map_new2.json; sourceTree = "<group>"; };
+		D23CE55021E83CDA005F4AB5 /* map_new1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = map_new1.json; sourceTree = "<group>"; };
+		D23CE55421E83D16005F4AB5 /* HYAStartCalculate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYAStartCalculate.m; sourceTree = "<group>"; };
+		D23CE55521E83D16005F4AB5 /* HYAStartCalculate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYAStartCalculate.h; sourceTree = "<group>"; };
+		D23CE55821E83DBA005F4AB5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D23CE55A21E83DC8005F4AB5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +53,7 @@
 			children = (
 				D23CE53821E83CC4005F4AB5 /* HYAStart */,
 				D23CE53721E83CC4005F4AB5 /* Products */,
+				D23CE55721E83DBA005F4AB5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +68,13 @@
 		D23CE53821E83CC4005F4AB5 /* HYAStart */ = {
 			isa = PBXGroup;
 			children = (
+				D23CE55321E83CEC005F4AB5 /* AStartCalculate */,
 				D23CE53921E83CC4005F4AB5 /* AppDelegate.h */,
 				D23CE53A21E83CC4005F4AB5 /* AppDelegate.m */,
 				D23CE53C21E83CC4005F4AB5 /* ViewController.h */,
 				D23CE53D21E83CC4005F4AB5 /* ViewController.m */,
+				D23CE55021E83CDA005F4AB5 /* map_new1.json */,
+				D23CE54F21E83CDA005F4AB5 /* map_new2.json */,
 				D23CE53F21E83CC4005F4AB5 /* Main.storyboard */,
 				D23CE54221E83CC4005F4AB5 /* Assets.xcassets */,
 				D23CE54421E83CC4005F4AB5 /* LaunchScreen.storyboard */,
@@ -69,6 +82,24 @@
 				D23CE54821E83CC4005F4AB5 /* main.m */,
 			);
 			path = HYAStart;
+			sourceTree = "<group>";
+		};
+		D23CE55321E83CEC005F4AB5 /* AStartCalculate */ = {
+			isa = PBXGroup;
+			children = (
+				D23CE55521E83D16005F4AB5 /* HYAStartCalculate.h */,
+				D23CE55421E83D16005F4AB5 /* HYAStartCalculate.m */,
+			);
+			path = AStartCalculate;
+			sourceTree = "<group>";
+		};
+		D23CE55721E83DBA005F4AB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D23CE55A21E83DC8005F4AB5 /* CoreGraphics.framework */,
+				D23CE55821E83DBA005F4AB5 /* Foundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,8 +159,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D23CE55221E83CDB005F4AB5 /* map_new1.json in Resources */,
 				D23CE54621E83CC4005F4AB5 /* LaunchScreen.storyboard in Resources */,
 				D23CE54321E83CC4005F4AB5 /* Assets.xcassets in Resources */,
+				D23CE55121E83CDB005F4AB5 /* map_new2.json in Resources */,
 				D23CE54121E83CC4005F4AB5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D23CE55621E83D16005F4AB5 /* HYAStartCalculate.m in Sources */,
 				D23CE53E21E83CC4005F4AB5 /* ViewController.m in Sources */,
 				D23CE54921E83CC4005F4AB5 /* main.m in Sources */,
 				D23CE53B21E83CC4005F4AB5 /* AppDelegate.m in Sources */,
